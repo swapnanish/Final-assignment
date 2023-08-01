@@ -1,0 +1,206 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  nav a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #ff3366;
+  }
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  .product-details {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .product-details img {
+    max-width: 300px; /* Set the desired width here */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .product-details form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-details label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .product-details input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product-details button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .product-details button:hover {
+    background-color: #e62f5d;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff3366;
+  }
+  
+  .footer-content p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-content ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-content a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-content a:hover {
+    color: #bbb;
+  }
+  
+  .bottom-bar {
+    margin-top: 20px;
+  }
+  
+  /* Newsletter form styles */
+ /* Newsletter form styles */
+ .newsletter form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 16px;
+    letter-spacing: 1px; /* Add more space between words */
+  }
+  
+  .newsletter button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    letter-spacing: 1px; /* Add more space between words */
+  }
+  
+  .newsletter button:hover {
+    background-color: #e62f5d;
+  }
+  
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    /* Add your responsive styles here if needed */
+  }
+  

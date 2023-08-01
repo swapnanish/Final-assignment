@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Store - Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">login</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <h1>Checkout</h1>
+    <section class="billing-address">
+        <h2>Billing Address</h2>
+        <form>
+          <label for="billing-name">Full Name:</label>
+          <input type="text" id="billing-name" name="billing-name" required>
+      
+          <label for="billing-email">Email:</label>
+          <input type="email" id="billing-email" name="billing-email" required>
+      
+          <label for="billing-address1">Address Line 1:</label>
+          <input type="text" id="billing-address1" name="billing-address1" required>
+      
+          <label for="billing-address2">Address Line 2:</label>
+          <input type="text" id="billing-address2" name="billing-address2">
+      
+          <label for="billing-city">City:</label>
+          <input type="text" id="billing-city" name="billing-city" required>
+      
+          <label for="billing-state">State:</label>
+          <input type="text" id="billing-state" name="billing-state" required>
+      
+          <label for="billing-zip">ZIP Code:</label>
+          <input type="text" id="billing-zip" name="billing-zip" required>
+      
+          <label for="billing-country">Country:</label>
+          <input type="text" id="billing-country" name="billing-country" required>
+        </form>
+      </section>
+      This code snippet adds the necessary form fields for the billing address, including the full name, email, address lines, city, state, ZIP code, and country. The required attribute is added to the required fields to ensure they are filled out before the user can proceed with the checkout process. The form fields will be styled based on the styles.css file linked in the <head> section of the HTML page.
+      
+      
+      
+      
+      
+      
+    <button>Place Order</button>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@beautystore.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+      </div>
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h3>Subscribe to our Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <p>&copy; 2023 Beauty Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

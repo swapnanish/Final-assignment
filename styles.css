@@ -1,0 +1,378 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  /* Header styles */
+  header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  /* Navigation bar styles */
+  nav {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  nav a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #ff3366;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Product grid styles */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    color: #000000;
+  }
+  
+  .product-card button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .product-card button:hover {
+    background-color: #e62f5d;
+    transform: scale(1.1);
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff3366; /* Match the accent color of the website */
+  }
+  
+  .footer-content p {
+    margin-bottom: 10px; /* Add some space between paragraphs */
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-content ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-content a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-content a:hover {
+    color: #bbb;
+  }
+  
+  .bottom-bar {
+    margin-top: 20px;
+  }
+  /* Smooth animations and transitions */
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img:hover {
+    filter: brightness(90%);
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #ff3366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* styles.css */
+
+/* ... (existing styles) ... */
+
+/* Common styles for login and register pages */
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .login-register-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .login-register-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .login-register-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-register-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .login-register-box input[type="text"],
+  .login-register-box input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .login-register-box button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-register-box button:hover {
+    background-color: #e62f5d;
+  }
+  
+  .login-register-box p {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  /* ... (existing styles) ... */
+  .hero-section {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section button.shop-now-button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .hero-section button.shop-now-button:hover {
+    background-color: #e62f5d;
+  }
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 24px;
+    }
+    
+    nav li {
+      margin: 0 5px;
+    }
+    
+    .hero-section h1 {
+      font-size: 36px;
+    }
+    
+    .hero-section p {
+      font-size: 20px;
+    }
+    
+    .hero-section button.shop-now-button {
+      font-size: 16px;
+    }
+  }
+  .newsletter form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .newsletter button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #e62f5d;
+  }
+  
+  /* Add more space between words in the input field */
+  .newsletter input[type="email"] {
+    letter-spacing: 1px; /* Adjust the value as needed */
+  }
+  
+  /* Add more space between words in the button */
+  .newsletter button {
+    letter-spacing: 1px; /* Adjust the value as needed */
+  }
+ /* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* ... Your existing responsive styles ... */
+  }
+  /* styles.css */
+
+/* Add this CSS to display the dropdown menu */
+ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+ul.dropdown-menu li {
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+  
